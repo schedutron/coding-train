@@ -16,7 +16,8 @@ function draw() {
     let x = radius * cos(time);
     let y = radius * sin(time);
     fill(255);
+    line(0, 0, x, y);
     ellipse(x, y, 8);
 
-    time += 0.01;
+    time -= 0.01;
 }
